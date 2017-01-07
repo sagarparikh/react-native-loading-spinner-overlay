@@ -127,9 +127,9 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <Modal onRequestClose={() => this.close()} visible={visible} transparent>
+      <View style={{flex:1,backgroundColor:'rgba(0,0,0,0.2)'}} visible={visible} >
         {spinner}
-      </Modal>
+      </View>
     );
 
   }
