@@ -21,7 +21,8 @@ import {
   View,
   Text,
   Modal,
-  ActivityIndicator
+  ActivityIndicator,
+  Dimensions
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -62,6 +63,7 @@ const styles = StyleSheet.create({
 });
 
 const SIZES = ['small', 'normal', 'large'];
+var {windowHeight, windowWidth} = Dimensions.get('window');
 
 export default class Spinner extends React.Component {
 
@@ -127,7 +129,7 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <View style={{flex:1,backgroundColor:'rgba(0,0,0,0.2)'}} visible={visible} >
+      <View style={{height:windowHeight,width:windowWidth,backgroundColor:'rgba(0,0,0,0.2)'}} visible={visible} >
         {spinner}
       </View>
     );
