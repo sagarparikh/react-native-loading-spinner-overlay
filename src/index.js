@@ -139,9 +139,9 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <Modal style={{flex:1, backgroundColor:'transparent', top:0, left:0}} visible={visible}>
+      <View style={{flex:1, backgroundColor:'transparent', top:-200, left:0}} visible={visible}>
         {spinner}
-      </Modal>
+      </View>
     );
 
   }
