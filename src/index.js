@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: '#00FF00',
+    backgroundColor: '#transparent',
     //width: windowWidth,
     //height:windowHeight,
     justifyContent: 'center',
@@ -139,7 +139,7 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <View style={{flex:1, backgroundColor:'#FF0000'}} visible={visible} >
+      <View style={{flex:1, backgroundColor:'#0000FF'}} visible={visible} >
         {spinner}
       </View>
     );
