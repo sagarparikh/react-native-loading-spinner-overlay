@@ -25,9 +25,13 @@ import {
   Dimensions
 } from 'react-native';
 
+const SIZES = ['small', 'normal', 'large'];
+var {windowHeight, windowWidth} = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    width: windowWidth,
+    height:windowHeight,
     backgroundColor: 'transparent',
     position: 'absolute',
     top: 0,
@@ -41,6 +45,8 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
+    width: windowWidth,
+    height:windowHeight,
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -62,8 +68,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const SIZES = ['small', 'normal', 'large'];
-var {windowHeight, windowWidth} = Dimensions.get('window');
+
 
 export default class Spinner extends React.Component {
 
@@ -103,7 +108,7 @@ export default class Spinner extends React.Component {
         <ActivityIndicator
           color={this.props.color}
           size={this.props.size}
-          style={{ flex: 1 }}
+          style={{ flex: 1, top:windowHeight/2, left:windowWidth/2}}
         />
         <View style={styles.textContainer}>
           <Text style={[styles.textContent, this.props.textStyle]}>{this.state.textContent}</Text>
