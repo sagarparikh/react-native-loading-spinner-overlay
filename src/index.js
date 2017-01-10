@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     flex:1,
+    alignSelf:'stretch'
   },
   background: {
     position: 'absolute',
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flex:1,
+    alignSelf:'stretch'
   },
   textContainer: {
     flex: 1,
@@ -110,7 +112,7 @@ export default class Spinner extends React.Component {
         <ActivityIndicator
           color={this.props.color}
           size={this.props.size}
-          style={{ flex: 1, top:windowHeight, left:windowWidth}}
+          style={{ flex: 1, alignSelf:'stretch'}}
         />
         <View style={styles.textContainer}>
           <Text style={[styles.textContent, this.props.textStyle]}>{this.state.textContent}</Text>
