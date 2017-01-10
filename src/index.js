@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     //height:windowHeight,
     justifyContent: 'center',
     alignItems: 'center',
-    //flex:1,
+    flex:1,
     //alignSelf:'stretch'
   },
   textContainer: {
