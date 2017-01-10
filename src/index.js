@@ -138,7 +138,7 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <View style={{flex:1,height:windowHeight,width:windowWidth,backgroundColor:'rgba(255,255,255,0.2)'}} visible={visible} >
+      <View style={{flex:1, alignSelf:'stretch', height:windowHeight,width:windowWidth,backgroundColor:'rgba(255,255,255,0.2)'}} visible={visible} >
         {spinner}
       </View>
     );
