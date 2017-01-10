@@ -110,7 +110,7 @@ export default class Spinner extends React.Component {
         <ActivityIndicator
           color={this.props.color}
           size={this.props.size}
-          style={{ flex: 1, top:windowHeight/2, left:windowWidth/2}}
+          style={{ flex: 1, top:windowHeight, left:windowWidth}}
         />
         <View style={styles.textContainer}>
           <Text style={[styles.textContent, this.props.textStyle]}>{this.state.textContent}</Text>
@@ -136,7 +136,7 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <View style={{flex:1,height:windowHeight,width:windowWidth,backgroundColor:'rgba(0,0,0,0.2)'}} visible={visible} >
+      <View style={{flex:1,height:windowHeight,width:windowWidth,backgroundColor:'rgba(255,255,255,0.2)'}} visible={visible} >
         {spinner}
       </View>
     );
