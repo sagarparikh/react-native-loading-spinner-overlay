@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     //alignSelf:'stretch',
     //width: windowWidth,
     //height:windowHeight,
-    //backgroundColor: 'transparent',
+    backgroundColor: 'transparent',
     position: 'absolute',
     top: 0,
     bottom: 0,
