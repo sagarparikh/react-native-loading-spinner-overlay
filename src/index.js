@@ -30,16 +30,16 @@ var {windowHeight, windowWidth} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    width: windowWidth,
-    height:windowHeight,
+    flex:1,
+    alignSelf:'stretch',
+    //width: windowWidth,
+    //height:windowHeight,
     backgroundColor: 'transparent',
     position: 'absolute',
     top: 0,
     bottom: 0,
     left: 0,
-    right: 0,
-    flex:1,
-    alignSelf:'stretch'
+    right: 0,    
   },
   background: {
     position: 'absolute',
@@ -47,12 +47,12 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    width: windowWidth,
-    height:windowHeight,
+    //width: windowWidth,
+    //height:windowHeight,
     justifyContent: 'center',
     alignItems: 'center',
-    flex:1,
-    alignSelf:'stretch'
+    //flex:1,
+    //alignSelf:'stretch'
   },
   textContainer: {
     flex: 1,
@@ -138,7 +138,7 @@ export default class Spinner extends React.Component {
     );
 
     return (
-      <View style={{flex:1, alignSelf:'stretch', height:windowHeight,width:windowWidth,backgroundColor:'rgba(255,255,255,0.2)'}} visible={visible} >
+      <View style={{flex:1, alignSelf:'stretch',}} visible={visible} >
         {spinner}
       </View>
     );
